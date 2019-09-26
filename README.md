@@ -1,5 +1,4 @@
-# LOIT
-Lot Of Indic Tweets
+# LOIT - Lot Of Indic Tweets
 
 # Installation
 ```
