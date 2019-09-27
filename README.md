@@ -17,7 +17,6 @@ loit.download('hindi', 'data')
 # download fasttext cbow vectors bin
 loit.download('hindi', 'cbow')
 
-
 # download fasttext skipgram vectors bin
 loit.download('hindi', 'skipgram')
 
