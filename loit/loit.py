@@ -18,6 +18,7 @@ urls = {
     }
 }
 
+
 def download(lang_name, to_download):
     if lang_name not in urls:
         logging.error(lang_name + ' is not supported yet.')
@@ -54,3 +55,23 @@ def read_data(lang_name):
     for line in opened_file:
         line = json.loads(line.strip())
         yield line
+
+def load_vectors(lang_name, type):
+    try:
+        import fasttext
+    except Exception as ex:
+        logging.exception(str(ex))
+        print('Run pip install git+https://github.com/facebookresearch/fastText to install fasttext')
+        exit()
+
+    home = os.path.expanduser("~")
+    lang_path = os.path.join(home, '.LOIT_' + lang_name)
+    to_download_path = os.path.join(lang_path, type)
+
+    if not os.path.exists(to_download_path):
+        logging.warning(to_download_path + ' does not exist. Downloading it.')
+        download(lang_name, type)
+    
+    model = fasttext.load_model(to_download_path)
+    
+    return model
