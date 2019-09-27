@@ -25,6 +25,6 @@ loit.download('hindi', 'skipgram')
 it = loit.read_data('telugu')
 
 for tweet_json in it:
-    print(tweet_json)['tweet']
+    print(tweet_json['tweet'])
     input()
 ```
