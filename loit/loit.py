@@ -7,10 +7,14 @@ from progressbar import progressbar
 
 urls = {
     'telugu': {
-        'data': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/lit-t.json.bz2'
+        'data': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/lit-t.json.bz2',
+        'cbow': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/telugu_cbow_100d.bin',
+        'skipgram': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/telugu_skipgram_100d.bin'
     },
     'hindi': {
-        'data': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/lit-t.json.bz2'
+        'data': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/lit-t.json.bz2',
+        'cbow': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/hindi_cbow_100d.bin',
+        'skipgram': 'https://github.com/bedapudi6788/LOIT/releases/download/v1/hindi_skipgram_100d.bin'
     }
 }
 
