@@ -14,11 +14,11 @@ import loit
 # hindi and telugu are available as of now
 loit.download('hindi', 'data')
 
-# download fasttext cbow vectors bin
-loit.download('hindi', 'cbow')
+# download fasttext cbow vectors and read them 
+loit.load_vectors('hindi', 'cbow')
 
-# download fasttext skipgram vectors bin
-loit.download('hindi', 'skipgram')
+# download fasttext skipgram vectors and read them
+loit.load_vectors('hindi', 'skipgram')
 
 # read the jsons from data
 #returns iterator that yields jsons
