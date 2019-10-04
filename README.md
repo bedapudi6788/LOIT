@@ -28,3 +28,6 @@ for tweet_json in it:
     print(tweet_json['tweet'])
     input()
 ```
+
+# ToDO
+1. Train a DeepMoji type of model on this data.
