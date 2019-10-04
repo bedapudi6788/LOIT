@@ -18,7 +18,7 @@ URL = 'https://github.com/bedapudi6788/LOIT'
 EMAIL = 'praneeth@bpraneeth.com'
 AUTHOR = 'BEDAPUDI PRANEETH'
 REQUIRES_PYTHON = '>=3.5.0'
-VERSION = '0.0.2'
+VERSION = '0.0.2.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
